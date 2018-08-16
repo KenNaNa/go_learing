@@ -1,0 +1,83 @@
+实际上爬虫一共就四个主要步骤：
+1) 明确目标 (要知道你准备在哪个范围或者网站去搜索)
+2) 爬 (将所有的网站的内容全部爬下来)
+3) 取 (去掉对我们没用处的数据)
+4) 处理数据（按照我们想要的方式存储和使用）
+
+百度贴吧
+http://tieba.baidu.com/f?kw=%E7%BB%9D%E5%9C%B0%E6%B1%82%E7%94%9F&ie=utf-8&pn=0  //下一页+50
+http://tieba.baidu.com/f?kw=%E7%BB%9D%E5%9C%B0%E6%B1%82%E7%94%9F&ie=utf-8&pn=50
+http://tieba.baidu.com/f?kw=%E7%BB%9D%E5%9C%B0%E6%B1%82%E7%94%9F&ie=utf-8&pn=100
+
+网页规律：
+https://www.pengfu.com/xiaohua_1.html   下一页 +1
+https://www.pengfu.com/xiaohua_2.html
+
+主页面规律：
+<h1 class="dp-b"><a href=" 一个段子url连接   "
+
+[[<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788974_1.html" https://www.pengfu.com/content_1788974_1.html] 
+
+[<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788973_1.html" https://www.pengfu.com/content_1788973_1.html] 
+
+[<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788972_1.html" https://www.pengfu.com/content_1788972_1.html] 
+
+[<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788971_1.html" https://www.pengfu.com/content_1788971_1.html] [<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788970_1.html" https://www.pengfu.com/content_1788970_1.html] [<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788969_1.html" https://www.pengfu.com/content_1788969_1.html] [<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788968_1.html" https://www.pengfu.com/content_1788968_1.html] [<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788967_1.html" https://www.pengfu.com/content_1788967_1.html] [<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788966_1.html" https://www.pengfu.com/content_1788966_1.html] [<h1 class="dp-b"><a href="https://www.pengfu.com/content_1788965_1.html" https://www.pengfu.com/content_1788965_1.html]]
+
+
+url =  https://www.pengfu.com/content_1788974_1.html
+url =  https://www.pengfu.com/content_1788973_1.html
+url =  https://www.pengfu.com/content_1788972_1.html
+url =  https://www.pengfu.com/content_1788971_1.html
+url =  https://www.pengfu.com/content_1788970_1.html
+url =  https://www.pengfu.com/content_1788969_1.html
+url =  https://www.pengfu.com/content_1788968_1.html
+url =  https://www.pengfu.com/content_1788967_1.html
+url =  https://www.pengfu.com/content_1788966_1.html
+url =  https://www.pengfu.com/content_1788965_1.html
+
+
+
+段子url:
+<h1>  标题 </h1>  只取1个
+<div class="content-txt pt10"> 段子内容 <a id="prev" href="
+
+
+
+
+
+ #
+大四的时候出来实习，刚进社会嘛，辈份小，嘴巴甜一点是必须，<br />
+所以每天到了办公室，各种叔叔阿姨很热情地叫，<br />
+有一天我在饭堂吃饭，恰好听到附近几个办公室的女人在聊天，<br />
+“刚来实习的那个小伙子，各方面还可以，就是那个嘴特毒！！！”#content = #
+“我在家的地位提升了”<br />
+“怎么，你老婆不打你了？”<br />
+“不是，我家的狗死了”<br />
+“……”#content = #
+一日，老师在讲课。老师说：“吕在古代是接吻的意思，上面一个口下面一个口。”<br />
+一位童鞋接着问：“那品怎么解释？”<br />
+老师正要发火。又有一个童鞋说：“那么器呢，四个人围着一条狗在干什么？”#content = #
+甲：你知道吗？我正在培育新品种，让鸽子与鹦鹉杂交。<br />
+乙：为什么？<br />
+甲：如果鸽子迷了路，那它就可以自己问路了。#content = #
+体育课，懒得跑步。一个人溜回寝室后，发现静悄悄的突然想干点邪恶的事。<br />
+于是熟练的打开电脑→D盘→成人收藏→XXOO高清无马.rmvb。<br />
+然后开始收拾小弟弟。。。。待小弟弟“吐了”之后提裤收拾的时候猛然发现寝室老二的女朋友在其床上玩手机！<br />
+fuck！！！在寝室死一般的沉默许久之后。<br />
+此女憋了半天打破尴尬来了句：“你不去洗洗吗？这样不健康。”#content = #
+想你，不知道分手这么久你过得怎么样，有没有人像我一样爱你。<br />
+你总是长不大，需要别人照顾，就连过马路也会忘记看红绿灯，<br />
+一定要别人牵着你才安全。<br />
+其实没什么重要得事，就是想告诉你我考下驾照了，<br />
+以后出门注意点。#content = #
+刚才去银行取钱，经理居然把我赶出来了！操，这算是什么服务态度啊，幸好我从没在这家银行存过钱！#content = #
+昨天活捉了一只花蚊子，可能是因为天气太热了，顿生怜悯之意，想了半天就把蚊子放生到室友的蚊帐里了。#content = #
+情人节终于约到炮了！进了宾馆房间，妹子看着我说：“我有点儿害怕，做的时候你一定要带套哦。”<br />
+我掏出安全套说：“别怕，我都准备好了。”<br />
+妹子说：“不是，我是说你要戴上头套，你长得太丑了，看着害怕。”#content = #
+今天大街上看到一男的打女的，男的骂道：“TMD这么漂亮不好好找人嫁了，去当小三。”<br />
+路人：“大哥，媳妇不可以这样打啊。”<br />
+大哥狠狠的看了路人一眼：“她勾引我媳妇。”#
+
+
